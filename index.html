@@ -1,0 +1,100 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> 
+        <link rel="stylesheet" href="mystyle.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+        <nav>
+            <a href="#home" class="home">Quicklink</a>
+            <a href="#features"><span id="ft1">Features</span></a>
+            <a href="#pricing"><span id="ft2">Pricing</span></a>
+            <a href="#resources"><span id="ft3">Resources</span></a>
+            <a href="#login" id="login"><span id="log">Login</span></a>
+            <button id="signup">Sign Up</button>
+        </nav>
+        <div class="first">
+            <div class="more">
+                <h1 class="h11">Short links, big impact!</h1>
+                <p class="p1">"Shorten your links, expand your reach"</p>
+                <button id="gstarted">Get Started</button>
+            </div>
+            <img src="images/img3.avif" alt="" id="working">
+        </div>
+        <div class="page2">
+            <div class="shorten">
+                <input type="text" id="text" placeholder="Shorten a link here...">
+                <p id="error"></p>
+                <button onclick="generate()"><span id="srt">Shorten It!</span></button> 
+            </div>
+            <div class="links" id="links">
+                <div id="recent">
+                    <p class="recenthead">Recent links</p>
+                </div>
+                <div class="link1">
+                    <div class="ele1">
+                        <p id="ogurl"></p>
+                        <p id="time"></p>
+                    </div>
+                    <!-- <p id="shorturl"></p> -->
+                    <a href="#" id="shorturl"></a>
+                    <button id="copy" onclick="copy()">Copy</button>
+                    <img src="images/img4.avif" alt="" id="delete" onclick="dele()">
+                </div>
+            </div>
+            <div class="adv">
+                <h1 class="advstat">Advanced Statistics</h1>
+                <p class="p2">Track how your links are performing across the web with our advanced statistics dashboards</p>
+            </div>
+            <div class="weird">
+                <div class="div1" style="background-color: powderblue;">
+                    
+                    <h2 style="font-family: helvetica;">Easy Sharing</h2>
+                    <p id="share1">Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+                </div>
+                <div class="div2" style="background-color: powderblue;">
+                    <h2 style="font-family: helvetica;">Link Analytics</h2>
+                    <p id="share2">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+                </div>
+                <div class="div3" style="background-color: powderblue;">
+                    <h2 style="font-family: helvetica;">Fully Customizable</h2>
+                    <p id="share3">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+                </div>
+            </div>
+        </div>
+        <div class="boost">
+            <h1>Boost your links today</h1>
+            <button id="gstarted">Get Started</button>
+        </div>
+        <footer>
+            <div class="footerele">
+                <div class="col1"></div>
+                <div class="col2">
+                    <p id="y1">Features</p>
+                    <a href="#">Link Shortening</a>
+                    <a href="#">Branded Links</a>
+                    <a href="#">Analytics</a>
+                </div>
+                <div class="col3">
+                    <p id="y2">Resources</p>
+                    <a href="#">Blog</a>
+                    <a href="#">Developers</a>
+                    <a href="#">Support</a>
+                </div>
+                <div class="col4">
+                    <p id="y3">Company</p>
+                    <a href="#">About</a>
+                    <a href="#">Our Team</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="social">
+                    <i class="fa-brands fa-facebook" id="f1"></i>&nbsp;&nbsp;<span style="color: black;">Facebook</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-twitter" id="t1"></i>&nbsp;<span style="color: black;">Twitter</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-square-instagram" id="i1"></i>&nbsp;<span style="color: black;">Instagram</span>
+                </div>
+            </div>
+            <div class="footnote">Challenge by Frontend Mentor. Coded by Om Srivastava.</div>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
